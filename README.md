@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>Analyze any GitHub profile from the terminal.</strong><br>
-  Repos, languages, activity, and contribution insights — all from the command line.
+  Repos, languages, activity, and contribution insights - all from the command line.
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
 
 ---
 
-ghstat fetches public GitHub data and renders it as rich terminal output — profile cards, repo rankings, language breakdowns with bar charts, and activity timelines.
+ghstat fetches public GitHub data and renders it as rich terminal output - profile cards, repo rankings, language breakdowns with bar charts, and activity timelines.
 
 No API key required for basic usage. Set `GITHUB_TOKEN` for higher rate limits.
 
@@ -41,12 +41,12 @@ ghstat languages torvalds
 
 ### `ghstat profile <username>`
 
-Full profile overview — identity, stats, top repos, and 12-month activity chart.
+Full profile overview - identity, stats, top repos, and 12-month activity chart.
 
 ```
 ╭──────────── @torvalds ────────────╮
 │       Name  Linus Torvalds        │
-│        Bio  —                     │
+│        Bio  -                     │
 │   Location  Portland, OR          │
 │                                   │
 │  Public Repos  8                  │
@@ -98,10 +98,10 @@ ghstat/
 
 **Design decisions:**
 
-- **No auth required** — Works with public GitHub API. Optional `GITHUB_TOKEN` raises the rate limit from 60 to 5,000 requests/hour.
-- **Fork filtering** — Forks are excluded from all stats to show original work only.
-- **Weighted ranking** — Repos are scored by `stars × 3 + forks × 2`, surfacing high-impact projects.
-- **Pagination** — Handles users with 100+ repos by fetching all pages automatically.
+- **No auth required** - Works with public GitHub API. Optional `GITHUB_TOKEN` raises the rate limit from 60 to 5,000 requests/hour.
+- **Fork filtering** - Forks are excluded from all stats to show original work only.
+- **Weighted ranking** - Repos are scored by `stars × 3 + forks × 2`, surfacing high-impact projects.
+- **Pagination** - Handles users with 100+ repos by fetching all pages automatically.
 
 ## Optional: Set a GitHub Token
 
@@ -119,4 +119,4 @@ Generate one at [github.com/settings/tokens](https://github.com/settings/tokens)
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](LICENSE) for details.
