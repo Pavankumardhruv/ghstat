@@ -39,9 +39,9 @@ def profile_summary(user: UserProfile, repos: list[Repo]) -> dict:
     return {
         "username": user.login,
         "name": user.name or user.login,
-        "bio": user.bio or "—",
-        "location": user.location or "—",
-        "company": user.company or "—",
+        "bio": user.bio or "-",
+        "location": user.location or "-",
+        "company": user.company or "-",
         "account_age": f"{age} years",
         "public_repos": len(repos),
         "total_stars": total_stars,

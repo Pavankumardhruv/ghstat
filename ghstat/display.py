@@ -47,11 +47,11 @@ def show_repos(repos: list[Repo]) -> None:
     table.add_column("Description", max_width=40)
 
     for r in repos:
-        pushed = r.pushed_at[:10] if r.pushed_at else "—"
-        desc = (r.description or "—")[:40]
+        pushed = r.pushed_at[:10] if r.pushed_at else "-"
+        desc = (r.description or "-")[:40]
         table.add_row(
             r.name,
-            r.language or "—",
+            r.language or "-",
             str(r.stars),
             str(r.forks),
             pushed,
